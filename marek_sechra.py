@@ -49,10 +49,10 @@ class MyTests(unittest.TestCase):
 
 #-----------------------------------------------------------------------
 
-# Function print_max_in have 3 parametres
-# 1. param is count for printing "how many countries u want print" 
-# 2. param is dict with flag and value of avg
-# 3. param is dict with flag like key and value is name of country 
+# Function print_max_in has 3 parametres
+# 1. param "count" is count for printable countries
+# 2. param "dict_flags_vals" is dict with flag and value of avg
+# 3. param "dict_flag_countries" is dict with flag like key and value is name of country 
 def print_max_min(count,dict_flags_vals,dict_flag_countries):
 	#print("lowest:")
 	try:
@@ -68,7 +68,8 @@ def print_max_min(count,dict_flags_vals,dict_flag_countries):
 			print(dict_flag_countries[flag2])
 	except:
 		sys.exit(-1)
-
+#Function print_countries has 1 param.
+# 1. param "count" is count for printable countries
 def print_countries(count):
 	url = 'https://json-stat.org/samples/oecd.json'
 
